@@ -4,6 +4,7 @@ gem 'rails', '3.2.11'
 gem 'jquery-rails', '2.2.1'
 gem 'thin', '1.5.0'
 gem 'haml', '4.0.2'
+gem 'bootstrap-sass', '2.0.4.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
