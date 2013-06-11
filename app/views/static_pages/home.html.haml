@@ -1,6 +1,17 @@
-.center.hero-unit
-  %h1 Welcome to the Microblog
-  %h2
-    Find out what's happening, right now, with the people and organizations
-    you care abou
-  = link_to 'Sign up now!', signup_path, class: 'btn btn-large btn-primary'
+- if signed_in?
+  .row
+    %aside.span4
+      %section
+        = render 'shared/user_info'
+      %section
+        = render 'shared/micropost_form'
+    %span.span8
+      %h3 Micropost feed
+      = render 'shared/feed'
+- else
+  .center.hero-unit
+    %h1 Welcome to the Microblog
+    %h2
+      Find out what's happening, right now, with the people and organizations
+      you care abou
+    = link_to 'Sign up now!', signup_path, class: 'btn btn-large btn-primary'
